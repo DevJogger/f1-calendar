@@ -6,7 +6,6 @@ import CalendarIcon from '../Icons/CalendarIcon';
 import ChevronRightIcon from '../Icons/ChevronRightIcon';
 import EmailIcon from '../Icons/EmailIcon';
 import NotificationIcon from '../Icons/NotificationIcon';
-import CoffeeIcon from '../Icons/CoffeeIcon';
 import { useLocale, useTranslations } from 'next-intl';
 
 const config = require(`/_db/${process.env.NEXT_PUBLIC_SITE_KEY}/config.json`);
@@ -90,18 +89,6 @@ const CTABar = () => {
           </Link>
         </div>
       )}
-
-      <div className="h-12 grow md:hidden">
-        <a
-          href="https://www.buymeacoffee.com/f1cal"
-          locale={locale as any}
-          className="bg-mid-green rounded-md shadow hover:bg-light-green hover:text-white flex justify-start content-center h-12 py-3 pl-12 relative"
-        >
-          <CoffeeIcon className="absolute left-3.5 self-center" />
-          {t('footer.coffee')}
-          <ChevronRightIcon className="absolute right-3 top-4" />
-        </a>
-      </div>
     </div>
   );
 };

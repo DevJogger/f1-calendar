@@ -6,7 +6,6 @@ import Link from "next/link";
 import usePlausible from "next-plausible";
 import Image from 'next/image';
 import CTABar from "../CTABar/CTABar";
-import SupportButton from "../SupportButton/SupportButton";
 
 const Header = ({ year, showCTABar }) => {
 	const t = useTranslations('All');
@@ -38,10 +37,6 @@ const Header = ({ year, showCTABar }) => {
 								</Link>
 							</h2>
 						</div>
-					</div>
-					
-					<div className="hidden md:inline-block">
-						<SupportButton />
 					</div>
 				</div>
 				{showCTABar && <CTABar />}
